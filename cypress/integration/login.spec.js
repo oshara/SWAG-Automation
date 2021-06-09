@@ -14,4 +14,7 @@ it('user login to the Application',function(){
  it('User add to cart a item',function(){
      cy.get("#add-to-cart-sauce-labs-backpack").click()
  })
+ it('User click the cart icon',function(){
+     cy.get('#shopping_cart_container').click()
+ })
 })
