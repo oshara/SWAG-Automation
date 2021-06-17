@@ -33,5 +33,16 @@ describe("login to demoqa.com",function(){
         cy.get('#item-0').click()
     })
 
+    it('fill the details of the form',function(){
+        cy.get('#userName').type('Lisa')
+        cy.get("#userEmail").type('test@gmail.com')
+        cy.get('#currentAddress').type('No18,Flowers Road,Colombo')
+        cy.get('#permanentAddress').type('No14,Hill lane,Colombo')
+        cy.get("#submit").click()
+    })
+
+    it("navigate to Check box section",function(){
+        
+    })
     
 })
